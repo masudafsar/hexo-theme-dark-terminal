@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400i,700,700i&subset=latin-ext');
 @import "variables";
+@import "mixins";
+
+@import "components/generals";
+@import "components/grid";
+@import "components/header";
 
 body {
   background: $color-background;
   color: $color-foreground;
-  text-align: center;
   font-family: $font-family;
 }

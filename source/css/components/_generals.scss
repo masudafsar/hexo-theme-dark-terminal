@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $font-family;
+    font-size: $font-size;
+    line-height: $line-height;
+}
+
+a {
+    color: $color-05;
+    text-decoration: none;
+
+    &:hover {
+        color: $color-13;
+    }
+    &:active {
+    }
+}

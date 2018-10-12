@@ -1,3 +1,7 @@
+// Size and grid system
+$width: 960px;
+$spacer: 20px;
+
 // Color system
 
 $color-dark: #182330;
@@ -43,7 +47,6 @@ $color-15: $color-teal-bold;
 $color-16: $color-white-bold;
 
 // Fonts
-$font-family: monospace;
-
-// Spacing
-$spacer: 20px;
+$font-family: 'Ubuntu Mono', monospace;
+$font-size: 1.125rem;
+$line-height: 1.25;

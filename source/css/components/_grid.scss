@@ -1,0 +1,9 @@
+.container {
+    width: $width;
+    margin: 0 auto;
+    padding: 0 $spacer;
+
+    .section {
+        margin: $spacer*2 0;
+    }
+}
