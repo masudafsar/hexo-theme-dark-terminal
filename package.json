@@ -1,0 +1,21 @@
+{
+  "name": "hexo-theme-dark-terminal",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/masudafsar/hexo-theme-dark-terminal.git"
+  },
+  "keywords": [
+    "hexo",
+    "theme"
+  ],
+  "author": "Masud Afsar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/masudafsar/hexo-theme-dark-terminal/issues"
+  },
+  "homepage": "https://github.com/masudafsar/hexo-theme-dark-terminal#readme",
+  "devDependencies": {}
+}
