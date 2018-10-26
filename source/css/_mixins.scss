@@ -1,10 +1,67 @@
-//-- clearfix
-@mixin clearfix {
-    &:before, &:after {
-        content: " ";
-        display: table;
+// Media mixins
+@mixin media-between($breakpoint-min, $breakpoint-max) {
+    @if $breakpoint-min !=null and $breakpoint-max !=null {
+        @media (min-width: $breakpoint-min) and (max-width: $breakpoint-max) {
+            @content;
+        }
     }
-    &:after {
-        clear: both;
+
+    @else {
+        @content;
     }
 }
+
+@mixin media-bigger-than($breakpoint) {
+    @if $breakpoint !=null {
+        @media (min-width: $breakpoint) {
+            @content;
+        }
+    }
+
+    @else {
+        @content;
+    }
+}
+
+@mixin media-smaller-than($breakpoint) {
+    @if $breakpoint !=null {
+        @media (max-width: $breakpoint) {
+            @content;
+        }
+    }
+
+    @else {
+        @content;
+    }
+}
+
+@mixin media-small {
+    @include media-smaller-than($breakpoint-small) {
+        @content;
+    }
+}
+
+@mixin media-medium {
+    @include media-between($breakpoint-small+1, $breakpoint-medium) {
+        @content;
+    }
+}
+
+@mixin media-large {
+    @include media-bigger-than($breakpoint-medium+1) {
+        @content;
+    }
+}
+
+@mixin media-small-and-medium {
+    @include media-smaller-than($breakpoint-medium) {
+        @content;
+    }
+}
+
+@mixin media-medium-and-large {
+    @include media-bigger-than($breakpoint-small+1) {
+        @content;
+    }
+}
+ 
