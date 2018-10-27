@@ -9,7 +9,7 @@ body {
 }
 
 h1 {
-    margin: 0;
+    margin: 0 0 .5em;
     font-size: $font-size-h1;
 }
 
@@ -38,12 +38,25 @@ h6 {
     font-size: $font-size-h6;
 }
 
+p {
+    margin: 0 0 1em;
+    font-size: 1em;
+}
+
 a {
-    color: $color-05;
+    color: $color-14;
     text-decoration: none;
 
+    &:before {
+        content: '\00a0_';
+    }
+
+    &:after {
+        content: '_\00a0';
+    }
+
     &:hover {
-        color: $color-13;
+        color: $color-06;
     }
 
     &:active {}
