@@ -1,0 +1,13 @@
+.section {
+    .command {
+        font-weight: 400;
+
+        span {
+            color: $color-command;
+        }
+        &:after {
+            color: $color-command;
+            content: '\00a0\21B5';
+        }
+    }
+}
