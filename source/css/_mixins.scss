@@ -4,9 +4,7 @@
         @media (min-width: $breakpoint-min) and (max-width: $breakpoint-max) {
             @content;
         }
-    }
-
-    @else {
+    } @else {
         @content;
     }
 }
@@ -16,9 +14,7 @@
         @media (min-width: $breakpoint) {
             @content;
         }
-    }
-
-    @else {
+    } @else {
         @content;
     }
 }
@@ -28,9 +24,7 @@
         @media (max-width: $breakpoint) {
             @content;
         }
-    }
-
-    @else {
+    } @else {
         @content;
     }
 }
@@ -64,4 +58,12 @@
         @content;
     }
 }
- 
+
+// Terminal mixins
+@mixin terminal-box {
+    margin-bottom: $spacer;
+    padding: $spacer;
+    border: $color-border solid 1px;
+    box-shadow: $color-border .5rem .5rem;
+    display: inline-block;
+}
