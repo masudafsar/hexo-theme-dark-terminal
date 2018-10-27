@@ -3,11 +3,5 @@
 @import "mixins";
 
 @import "components/generals";
-@import "components/grid";
 @import "components/header";
 
-body {
-  background: $color-background;
-  color: $color-foreground;
-  font-family: $font-family;
-}
