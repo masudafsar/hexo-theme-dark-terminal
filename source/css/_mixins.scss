@@ -65,5 +65,8 @@
     padding: $spacer;
     border: $color-border solid 1px;
     box-shadow: $color-border .5rem .5rem;
-    display: inline-block;
+
+    @include media-medium-and-large{
+        display: inline-block;
+    }
 }

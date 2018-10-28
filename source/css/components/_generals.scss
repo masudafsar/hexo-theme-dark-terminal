@@ -1,11 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    margin: $spacer $spacer/2;
-    padding: 0;
+    width: 100%;
+    margin: 0;
+    padding: $spacer $spacer/2;
     background: $color-background;
     color: $color-foreground;
     font-family: $font-family;
     font-size: $font-size;
     line-height: $line-height;
+
+    @include media-medium {
+        width: 600px;
+        border-right: .25em solid $color-09;
+    }
+    @include media-large {
+        width: 960px;
+        border-right: .5em solid $color-09;
+    }
 }
 
 h1 {
@@ -59,5 +73,6 @@ a {
         color: $color-06;
     }
 
-    &:active {}
+    &:active {
+    }
 }
