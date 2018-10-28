@@ -1,6 +1,10 @@
-<% var whoami = site.pages.findOne({title: 'whoami'})
+<% var whoami = site.pages.findOne({source: 'whoami/index.md'})
 if (whoami){ %>
-    <%- partial('components/command', {section: whoami}) %>
+    <%- partial('components/command', {section: whoami, id: 'whoami'}) %>
+<% } %>
+<% var skills = site.pages.findOne({source: 'skills/index.md'})
+if (skills){ %>
+    <%- partial('components/command', {section: skills, id: 'skills'}) %>
 <% } %>
 <div id="heading">
     <h1>Heading 1</h1>

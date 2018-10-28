@@ -11,3 +11,49 @@
         }
     }
 }
+
+#skills {
+    .responce {
+        ul {
+            margin: 0;
+            padding: 0;
+
+            ul {
+                margin-left: $spacer / 2;
+            }
+
+            li {
+                padding: $spacer/ 4 $spacer / 2;
+                list-style: none;
+                position: relative;
+
+                p {
+                    margin: 0;
+                }
+
+                &:before {
+                    height: 100%;
+                    border-left: 1px solid $color-border;
+                    position: absolute;
+                    top: 0px;
+                    left: -1px;
+                    content: ' ';
+                }
+
+                &:after {
+                    width: $spacer / 2;
+                    height: 1px;
+                    border-top: 1px solid $color-border;
+                    position: absolute;
+                    top: 15px;
+                    left: -1px;
+                    content: ' ';
+                }
+
+                &:last-child:before {
+                    height: 1em;
+                }
+            }
+        }
+    }
+}
