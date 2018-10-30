@@ -12,7 +12,7 @@
     }
 }
 
-#skills {
+.tree {
     .responce {
         ul {
             margin: 0;
@@ -23,30 +23,34 @@
             }
 
             li {
-                padding: $spacer/ 4 $spacer / 2;
+                padding: $spacer / 2 $spacer;
                 list-style: none;
                 position: relative;
 
                 p {
                     margin: 0;
+                    padding-bottom: $spacer / 2;
+
+                    strong {
+                        color: $color-12;
+                    }
                 }
 
                 &:before {
                     height: 100%;
-                    border-left: 1px solid $color-border;
+                    border-left: $border-size solid $color-border;
                     position: absolute;
                     top: 0px;
-                    left: -1px;
+                    left: -$border-size;
                     content: ' ';
                 }
 
                 &:after {
-                    width: $spacer / 2;
-                    height: 1px;
-                    border-top: 1px solid $color-border;
+                    width: $spacer;
+                    border-top: $border-size solid $color-border;
                     position: absolute;
-                    top: 15px;
-                    left: -1px;
+                    top: 1em;
+                    left: -$border-size;
                     content: ' ';
                 }
 
