@@ -1,6 +1,6 @@
-<section class="section" id="<%- id %>%>">
-    <h3 class="command"><span>Masud@Afsar:~$ </span><%= section.title %></h3>
+<section class="section <%= Array.isArray(cmdData.class) ? cmdData.class.join(' ') : '' %>">
+    <h3 class="command"><span>Masud@Afsar:~$ </span><%= cmdData.title %></h3>
     <div class="responce">
-        <%- section.content %>
+        <%- cmdData.content %>
     </div>
 </section>
