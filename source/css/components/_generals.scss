@@ -5,7 +5,7 @@
 body {
     width: 100%;
     margin: 0;
-    padding: $spacer $spacer/2;
+    padding: $spacer * 2 $spacer;
     background: $color-background;
     color: $color-foreground;
     font-family: $font-family;
@@ -13,12 +13,13 @@ body {
     line-height: $line-height;
 
     @include media-medium {
-        width: 600px;
-        border-right: .25em solid $color-09;
+        font-size: $font-size * 1.25;
     }
     @include media-large {
         width: 960px;
+        padding: $spacer;
         border-right: .5em solid $color-09;
+        font-size: $font-size * 1.5;
     }
 }
 

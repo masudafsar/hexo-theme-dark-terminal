@@ -63,8 +63,8 @@
 @mixin terminal-box {
     margin-bottom: $spacer;
     padding: $spacer;
-    border: $color-border solid 1px;
-    box-shadow: $color-border .5rem .5rem;
+    border: $color-border solid $border-size;
+    box-shadow: $color-border .5em .5em;
 
     @include media-medium-and-large{
         display: inline-block;
