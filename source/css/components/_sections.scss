@@ -19,7 +19,7 @@
             padding: 0;
 
             ul {
-                margin-left: $spacer / 2;
+                margin-left: $spacer;
             }
 
             li {
@@ -40,7 +40,7 @@
                     height: 100%;
                     border-left: $border-size solid $color-border;
                     position: absolute;
-                    top: 0px;
+                    top: 0;
                     left: -$border-size;
                     content: ' ';
                 }

@@ -2,44 +2,23 @@
 if (whoami){ %>
 <%- partial('components/command', {cmdData: whoami}) %>
 <% } %>
+
 <% var skills = site.pages.findOne({source: 'skills/index.md'})
 if (skills){ %>
 <%- partial('components/command', {cmdData: skills}) %>
 <% } %>
-<div id="heading">
-    <h1>Heading 1</h1>
-    <h2>Heading 2</h2>
-    <h3>Heading 3</h3>
-    <h4>Heading 4</h4>
-    <h5>Heading 5</h5>
-    <h6>Heading 6</h6>
-</div>
-<div class="paragraphs">
-    <p>
-        It’s that time of the year. The time to make resolutions and set goals for the coming twelve months. I keep
-        reading that the key to achieving your goals is accountability. Some people even built webapps to help with
-        habit creation.
-    </p>
-    <p>
-        I must admit I’m not a massive fan of resolutions and I much prefer goals as I find them to be more specific.
-        This allows me to focus on creating the appropriate systems to give life to my visions.
-    </p>
-    <p>
-        By publishing this post, I intend to share with you the list of goals that I have set for myself so I can
-        hopefully look back and see all (or at least most) the boxes ticked.
-    </p>
-    <p>
-        I have divided my goals into three categories: Career, Creativity and Health.
-    </p>
-</div>
-<div class="code">
-    <pre>nums = [0,2, 34, 55, 32]
-for i in range(nums):
-    print i</pre>
-</div>
-<div class="quote">
-    <blockquote>
-        Loop over a file containing a list of names until the loop returns an empty string, in which case we break out
-        of it.
-    </blockquote>
-</div>
+
+<% var projects = site.pages.findOne({source: 'projects/index.md'})
+if (projects){ %>
+    <%- partial('components/command', {cmdData: projects}) %>
+<% } %>
+
+<% var history = site.pages.findOne({source: 'history/index.md'})
+if (history){ %>
+    <%- partial('components/command', {cmdData: history}) %>
+<% } %>
+
+<% var contact = site.pages.findOne({source: 'contact/index.md'})
+if (contact){ %>
+    <%- partial('components/command', {cmdData: contact}) %>
+<% } %>

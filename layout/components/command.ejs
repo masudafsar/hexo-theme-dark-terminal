@@ -1,6 +1,9 @@
-<section class="section <%= Array.isArray(cmdData.class) ? cmdData.class.join(' ') : '' %>">
-    <h3 class="command"><span>Masud@Afsar:~$ </span><%= cmdData.title %></h3>
-    <div class="responce">
-        <%- cmdData.content %>
-    </div>
-</section>
+<% var cmdData;
+if(cmdData !== undefined) { %>
+    <section class="section <%= Array.isArray(cmdData.class) ? cmdData.class.join(' ') : '' %>">
+        <h3 class="command"><span>Masud@Afsar:~$ </span><%= cmdData.title %></h3>
+        <div class="responce">
+            <%- cmdData.content %>
+        </div>
+    </section>
+<% } %>
