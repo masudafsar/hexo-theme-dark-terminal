@@ -1,0 +1,10 @@
+<% var cmd = site.pages.findOne({source: 'contact/index.md'})
+if (cmd){ %>
+    <%- partial('components/command', {
+        cmdData: {
+            title: cmd.title,
+            class: cmd.class,
+            content: cmd.content,
+        }
+    }) %>
+<% } %>

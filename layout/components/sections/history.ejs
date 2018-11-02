@@ -1,0 +1,4 @@
+<% var history = site.pages.findOne({source: 'history/index.md'})
+if (history){ %>
+    <%- partial('components/command', {cmdData: history}) %>
+<% } %>

@@ -1,24 +1,6 @@
-<% var whoami = site.pages.findOne({source: 'whoami/index.md'})
-if (whoami){ %>
-<%- partial('components/command', {cmdData: whoami}) %>
-<% } %>
-
-<% var skills = site.pages.findOne({source: 'skills/index.md'})
-if (skills){ %>
-<%- partial('components/command', {cmdData: skills}) %>
-<% } %>
-
-<% var projects = site.pages.findOne({source: 'projects/index.md'})
-if (projects){ %>
-    <%- partial('components/command', {cmdData: projects}) %>
-<% } %>
-
-<% var history = site.pages.findOne({source: 'history/index.md'})
-if (history){ %>
-    <%- partial('components/command', {cmdData: history}) %>
-<% } %>
-
-<% var contact = site.pages.findOne({source: 'contact/index.md'})
-if (contact){ %>
-    <%- partial('components/command', {cmdData: contact}) %>
-<% } %>
+<%- partial('components/sections/whoami') %>
+<%- partial('components/sections/skills') %>
+<%- /*partial('components/sections/projects')*/ %>
+<%- /*partial('components/sections/history')*/ %>
+<%- /*partial('components/sections/articles')*/ %>
+<%- partial('components/sections/contact') %>

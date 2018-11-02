@@ -1,0 +1,4 @@
+<% var projects = site.pages.findOne({source: 'projects/index.md'})
+if (projects){ %>
+    <%- partial('components/command', {cmdData: projects}) %>
+<% } %>

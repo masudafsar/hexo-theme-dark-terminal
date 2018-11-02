@@ -1,1 +1,7 @@
-<%- partial('components/command', {cmdData: page}) %>
+<%- partial('components/command', {
+    cmdData: {
+        title: page.title,
+        class: page.class,
+        content: page.content,
+    }
+}) %>
