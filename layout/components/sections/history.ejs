@@ -1,4 +1,14 @@
-<% var history = site.pages.findOne({source: 'history/index.md'})
+<%
+var history = {
+    title: 'history',
+    class: [
+        'page',
+        'history',
+        'ls',
+    ],
+    content: partial('components/sections/content/history', {items: site.data.history}),
+}
+
 if (history){ %>
     <%- partial('components/command', {cmdData: history}) %>
 <% } %>

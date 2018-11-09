@@ -1,0 +1,14 @@
+<ul>
+    <%
+    for(var item in items) {
+    %>
+        <li id="history-<%- item %>">
+            <span class="date"><%- items[item].from %>-<%- items[item].to %></span>
+            <em><%- items[item].position %></em>
+            @
+            <strong><%- items[item].title %></strong>
+        </li>
+    <%
+    }
+    %>
+</ul>

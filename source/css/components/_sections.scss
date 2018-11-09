@@ -15,7 +15,7 @@
 .tree {
     .responce {
         ul {
-            margin: 0;
+            margin: 0 0 1em;
             padding: 0;
 
             ul {
@@ -56,6 +56,32 @@
 
                 &:last-child:before {
                     height: 1em;
+                }
+            }
+        }
+    }
+}
+
+.ls {
+    .responce {
+        ul {
+            margin: 0 0 1em;
+            padding: 0;
+
+            li {
+                list-style: none;
+
+                &:before {
+                    color: $color-15;
+                    content: '\007e\00a0';
+                }
+
+                em {
+                    color: $color-16;
+                }
+
+                strong {
+                    color: $color-12;
                 }
             }
         }
