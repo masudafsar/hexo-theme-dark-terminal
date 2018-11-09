@@ -1,0 +1,13 @@
+<ul>
+    <%
+    for(var item in items) {
+    %>
+        <li id="project-<%- item %>">
+            <span class="date"><%- items[item].date %></span>&nbsp;
+            <strong><%- items[item].title %></strong>
+            <em>(<%- items[item].tags.join(', ') %>)</em>
+        </li>
+    <%
+    }
+    %>
+</ul>

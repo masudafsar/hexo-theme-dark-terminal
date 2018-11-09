@@ -1,4 +1,13 @@
-<% var projects = site.pages.findOne({source: 'projects/index.md'})
+<%
+var projects = {
+    title: 'ls projects/',
+    class: [
+        'page',
+        'projects',
+        'ls',
+    ],
+    content: partial('components/sections/content/projects', {items: site.data.projects}),
+}
 if (projects){ %>
     <%- partial('components/command', {cmdData: projects}) %>
 <% } %>
