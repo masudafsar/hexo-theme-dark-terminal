@@ -1,0 +1,72 @@
+// Media mixins
+@mixin media-between($breakpoint-min, $breakpoint-max) {
+    @if $breakpoint-min !=null and $breakpoint-max !=null {
+        @media (min-width: $breakpoint-min) and (max-width: $breakpoint-max) {
+            @content;
+        }
+    } @else {
+        @content;
+    }
+}
+
+@mixin media-bigger-than($breakpoint) {
+    @if $breakpoint !=null {
+        @media (min-width: $breakpoint) {
+            @content;
+        }
+    } @else {
+        @content;
+    }
+}
+
+@mixin media-smaller-than($breakpoint) {
+    @if $breakpoint !=null {
+        @media (max-width: $breakpoint) {
+            @content;
+        }
+    } @else {
+        @content;
+    }
+}
+
+@mixin media-small {
+    @include media-smaller-than($breakpoint-small) {
+        @content;
+    }
+}
+
+@mixin media-medium {
+    @include media-between($breakpoint-small+1, $breakpoint-medium) {
+        @content;
+    }
+}
+
+@mixin media-large {
+    @include media-bigger-than($breakpoint-medium+1) {
+        @content;
+    }
+}
+
+@mixin media-small-and-medium {
+    @include media-smaller-than($breakpoint-medium) {
+        @content;
+    }
+}
+
+@mixin media-medium-and-large {
+    @include media-bigger-than($breakpoint-small+1) {
+        @content;
+    }
+}
+
+// Terminal mixins
+@mixin terminal-box {
+    margin-bottom: $spacer;
+    padding: $spacer;
+    border: $color-border solid $border-size;
+    box-shadow: $color-border .5em .5em;
+
+    @include media-medium-and-large{
+        display: inline-block;
+    }
+}

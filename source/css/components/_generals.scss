@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: $spacer * 2 $spacer;
+    background: $color-background;
+    color: $color-foreground;
+    font-family: $font-family;
+    font-size: $font-size;
+    line-height: $line-height;
+
+    @include media-medium {
+        font-size: $font-size * 1.25;
+    }
+    @include media-large {
+        width: 960px;
+        padding: $spacer;
+        border-right: .5em solid $color-09;
+        font-size: $font-size * 1.5;
+    }
+}
+
+h1 {
+    margin: 0 0 .5em;
+    font-size: $font-size-h1;
+}
+
+h2 {
+    @extend h1;
+    font-size: $font-size-h2;
+}
+
+h3 {
+    @extend h1;
+    font-size: $font-size-h3;
+}
+
+h4 {
+    @extend h1;
+    font-size: $font-size-h4;
+}
+
+h5 {
+    @extend h1;
+    font-size: $font-size-h5;
+}
+
+h6 {
+    @extend h1;
+    font-size: $font-size-h6;
+}
+
+p {
+    margin: 0 0 1em;
+    font-size: 1em;
+}
+
+a {
+    color: $color-14;
+    text-decoration: none;
+
+    &:before {
+        content: '\00a0_';
+    }
+
+    &:after {
+        content: '_\00a0';
+    }
+
+    &:hover {
+        color: $color-06;
+    }
+
+    &:active {
+    }
+}

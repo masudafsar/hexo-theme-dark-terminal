@@ -1,0 +1,14 @@
+#header {
+    @include terminal-box;
+
+    h1 {
+        margin: 0;
+        font-size: 4em;
+    }
+    h2 {
+        margin: 0;
+        color: $color-16;
+        font-size: 1.5em;
+        font-weight: 100;
+    }
+}

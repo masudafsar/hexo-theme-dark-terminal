@@ -1,49 +1,65 @@
+// Size and grid system
+$max-width: 56rem;
+$breakpoint-small: 640px;
+$breakpoint-medium: 996px;
+$spacer: 1em;
+$border-size: .1em;
+
 // Color system
 
-$color-dark: #182330;
-$color-light: #b4e1fd;
+$color-midnight-blue: #2c3e50;
+$color-pumpkin: #d35400;
+$color-nephritis: #27ae60;
+$color-orange: #f39c12;
+$color-blize-hole: #2980b9;
+$color-pomegranate: #c0392b;
+$color-wisteria: #8e44ad;
+$color-clouds: #ecf0f1;
 
-$color-black: #363636;
-$color-red: #ff0883;
-$color-green: #83ff08;
-$color-yellow: #ff8308;
-$color-blue: #0883ff;
-$color-magenta: #8308ff;
-$color-teal: #08ff83;
-$color-white: #b6b6b6;
+$color-wet-asphalt: #34495e;
+$color-carrot: #e67e22;
+$color-emerald: #2ecc71;
+$color-sun-flower: #f1c40f;
+$color-peter-river: #3498db;
+$color-alizarin: #e74c3c;
+$color-amethyst: #9b59b6;
+$color-sliver: #bdc3c7;
 
-$color-black-bold: #424242;
-$color-red-bold: #ff1e8e;
-$color-green-bold: #8eff1e;
-$color-yellow-bold: #ff8e1e;
-$color-blue-bold: #1e8eff;
-$color-magenta-bold: #8e1eff;
-$color-teal-bold: #1eff8e;
-$color-white-bold: #c2c2c2;
+$color-black: $color-midnight-blue;
+$color-white: $color-clouds;
 
-$color-background: $color-dark;
-$color-foreground: $color-light;
+$color-01: $color-midnight-blue;
+$color-02: $color-pumpkin;
+$color-03: $color-nephritis;
+$color-04: $color-orange;
+$color-05: $color-blize-hole;
+$color-06: $color-pomegranate;
+$color-07: $color-wisteria;
+$color-08: $color-clouds;
 
-$color-01: $color-black;
-$color-02: $color-red;
-$color-03: $color-green;
-$color-04: $color-yellow;
-$color-05: $color-blue;
-$color-06: $color-magenta;
-$color-07: $color-teal;
-$color-08: $color-white;
+$color-09: $color-wet-asphalt;
+$color-10: $color-carrot;
+$color-11: $color-emerald;
+$color-12: $color-sun-flower;
+$color-13: $color-peter-river;
+$color-14: $color-alizarin;
+$color-15: $color-amethyst;
+$color-16: $color-sliver;
 
-$color-09: $color-black-bold;
-$color-10: $color-red-bold;
-$color-11: $color-green-bold;
-$color-12: $color-yellow-bold;
-$color-13: $color-blue-bold;
-$color-14: $color-magenta-bold;
-$color-15: $color-teal-bold;
-$color-16: $color-white-bold;
+$color-background: $color-black;
+$color-foreground: $color-white;
+$color-border: $color-16;
+
+$color-command: $color-11;
 
 // Fonts
-$font-family: monospace;
+$font-family: 'Ubuntu Mono', monospace;
+$font-size: 1rem;
+$line-height: 1.25;
 
-// Spacing
-$spacer: 20px;
+$font-size-h1: 2.25em;
+$font-size-h2: 2.00em;
+$font-size-h3: 1.75em;
+$font-size-h4: 1.50em;
+$font-size-h5: 1.25em;
+$font-size-h6: 1.00em;

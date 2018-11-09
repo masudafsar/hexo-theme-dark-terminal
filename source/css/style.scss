@@ -1,8 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400i,700,700i');
 @import "variables";
+@import "mixins";
 
-body {
-  background: $color-background;
-  color: $color-foreground;
-  text-align: center;
-  font-family: $font-family;
-}
+@import "components/generals";
+@import "components/header";
+@import "components/footer";
+@import "components/sections";
