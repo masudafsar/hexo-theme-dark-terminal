@@ -70,11 +70,17 @@
             padding: 0;
 
             li {
+                margin-bottom: .25em;
+                padding-left: 1em;
                 list-style: none;
+                position: relative;
 
                 &:before {
                     color: $color-15;
-                    content: '\007e\00a0';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    content: '\007e';
                 }
 
                 em {
